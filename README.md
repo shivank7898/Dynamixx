@@ -14,9 +14,9 @@ An experimental package that lets you add and manage state dynamically with zero
 ## Installation
 
 ```bash
-npm install dynamixx-store
+npm install dynamixx
 # or
-yarn add dynamixx-store
+yarn add dynamixx
 ```
 
 ## Usage Examples
@@ -26,7 +26,7 @@ yarn add dynamixx-store
 Perfect for rapid development and dynamic data needs.
 
 ```typescript
-import { useDynamicStore } from "dynamixx-store";
+import { useDynamicStore } from "dynamixx";
 
 // --- Authentication & User Management ---
 function AuthComponent() {
@@ -107,7 +107,7 @@ function ThemeComponent() {
 For cases where you prefer a more structured approach with TypeScript.
 
 ```typescript
-import { createStore } from "dynamixx-store";
+import { createStore } from "dynamixx";
 
 // Define your store types
 interface Todo {
