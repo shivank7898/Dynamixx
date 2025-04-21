@@ -1,6 +1,6 @@
 {
   "name": "dynamixx",
-  "version": "0.0.1",
+  "version": "1.0.2",
   "description": "Zero-boilerplate dynamic state management system built on Zustand",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -10,27 +10,39 @@
     "README.md"
   ],
   "scripts": {
-    "build": "tsup --dts",
-    "dev": "tsup --watch --dts",
-    "typecheck": "tsc --noEmit"
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "jest",
+    "lint": "eslint src --ext .ts,.tsx",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "clean": "rimraf dist"
   },
   "keywords": [
     "zustand",
     "state-management",
-    "react",
-    "dynamic-store"
+    "zustand",
+    "typescript",
+    "zero-config"
   ],
-  "author": "",
+  "author": "Shivank",
   "license": "MIT",
   "peerDependencies": {
-    "react": ">=16.8.0"
-  },
-  "dependencies": {
-    "zustand": "^4.5.6"
+    "react": ">=16.8.0",
+    "zustand": ">=4.0.0"
   },
   "devDependencies": {
-    "@types/react": "^18.3.20",
-    "tsup": "^8.0.1",
-    "typescript": "^5.3.3"
-  }
+    "@types/react": "^18.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "prettier": "^3.0.0",
+    "rimraf": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivank7898/Dynamixx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shivank7898/Dynamixx/issues"
+  },
+  "homepage": "https://github.com/shivank7898/Dynamixx#readme"
 }
