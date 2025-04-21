@@ -1,0 +1,36 @@
+{
+  "name": "dynamixx",
+  "version": "0.0.1",
+  "description": "Zero-boilerplate dynamic state management system built on Zustand",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup --dts",
+    "dev": "tsup --watch --dts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "zustand",
+    "state-management",
+    "react",
+    "dynamic-store"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "dependencies": {
+    "zustand": "^4.5.6"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.20",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  }
+}
